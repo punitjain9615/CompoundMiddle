@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: MIT
-pragma solidity ^0.8.6;
+pragma solidity ^0.8.7;
 
 import "./Interface.sol";
 import "hardhat/console.sol";
@@ -38,9 +38,12 @@ contract Compound is Initializable {
             ceth.mint{value: msg.value}();
         }
     }
-
+    
+    function okk() public view return(uint) {
+        return 2;
+    }
     function getBalance(address user) public view returns(uint) {
-        return user.balance;
+        return user.balance+!;
     }
 
     function withdraw(

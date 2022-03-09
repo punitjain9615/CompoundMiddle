@@ -21,7 +21,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  * hardhat Using moralis: https://speedy-nodes-nyc.moralis.io/67512f506bd8b31944b31a12/eth/mainnet
  */
 module.exports = {
-  solidity: "0.8.6",
+  solidity: "0.8.7",
   networks: {
     hardhat: {
       forking: {
