@@ -17,16 +17,16 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 
-/**
- * hardhat Using moralis: https://speedy-nodes-nyc.moralis.io/67512f506bd8b31944b31a12/eth/mainnet
- */
+// /**
+//  * hardhat Using moralis: https://speedy-nodes-nyc.moralis.io/67512f506bd8b31944b31a12/eth/mainnet
+//  */
 module.exports = {
-  solidity: "0.8.7",
+  solidity: "0.8.8",
   networks: {
     hardhat: {
       forking: {
         url : "https://eth-mainnet.alchemyapi.io/v2/nD2QQLNkwZox38QIQvq4-vCjTVRmVwqH",
-        //blockNumber: 11095000,
+        blockNumber: 11095000,
       }
     }
   }
